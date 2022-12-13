@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh 'cd backend/ && docker build -f Dockerfile . '
+      }
+    }
+
   }
 }
