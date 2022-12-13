@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'cd backend/ && docker build -f Dockerfile . '
+        sh 'cd backend/ && sudo docker build -f Dockerfile . '
       }
     }
 
